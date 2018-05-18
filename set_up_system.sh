@@ -27,3 +27,5 @@ pip install pipenv
 
 # Install oh-my-zsh and make it default
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+export PIPENV_VENV_IN_PROJECT=1
+export SHELL=zsh
