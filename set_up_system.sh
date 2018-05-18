@@ -11,6 +11,7 @@ while read -r p ; do apt-get install -y $p ; done < <(cat << "EOF"
     python3
     python3-pip 
     python3-dev
+    tmux
 EOF
 )
 # Make zsh default
