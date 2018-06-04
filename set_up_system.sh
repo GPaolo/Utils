@@ -3,6 +3,7 @@
 set -eu -o pipefail # fail on error , debug all lines
 
 echo installing the must-have pre-requisites
+apt-get update
 while read -r p ; do apt-get install -y $p ; done < <(cat << "EOF"
     git
     wget
