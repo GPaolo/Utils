@@ -19,7 +19,7 @@ EOF
 chsh -s $(which zsh)
 
 # Create src folder to download stuff
-mkdir ./src
+mkdir -p ./src
 cd src
 
 # Install pip and packages for virtualenv
@@ -29,5 +29,9 @@ pip install pipenv
 
 # Install oh-my-zsh and make it default
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-export PIPENV_VENV_IN_PROJECT=1
-export SHELL=/usr/bin/zsh
+
+echo "PIPENV_VENV_IN_PROJECT=1" >> ~/.zshrc
+echo "SHELL=/usr/bin/zsh" >> ~/.zshrc
+echo "LC_ALL=C.UTF-8" >> ~/.zshrc
+echo "LANG=C.UTF-8" >> ~/.zshrc
+
