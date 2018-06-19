@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -eu -o pipefail # fail on error , debug all lines
+#set -eu -o pipefail # fail on error , debug all lines
 
 echo installing the must-have pre-requisites
 apt-get update
