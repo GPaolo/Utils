@@ -10,7 +10,7 @@ while read -r p ; do apt-get install -y $p ; done < <(cat << "EOF"
     zsh
     nano
     python3
-    python3-pip 
+    python3-pip
     python3-dev
     tmux
     htop
@@ -31,8 +31,7 @@ pip install pipenv
 # Install oh-my-zsh and make it default
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
-echo "PIPENV_VENV_IN_PROJECT=1" >> ~/.zshrc
-echo "SHELL=/usr/bin/zsh" >> ~/.zshrc
-echo "LC_ALL=C.UTF-8" >> ~/.zshrc
-echo "LANG=C.UTF-8" >> ~/.zshrc
-
+echo "export PIPENV_VENV_IN_PROJECT=1" >> ~/.zshrc
+echo "export SHELL=/usr/bin/zsh" >> ~/.zshrc
+echo "export LC_ALL=C.UTF-8" >> ~/.zshrc
+echo "export LANG=C.UTF-8" >> ~/.zshrc
