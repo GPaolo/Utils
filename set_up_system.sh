@@ -37,4 +37,5 @@ echo "export LC_ALL=C.UTF-8" >> ~/.zshrc
 echo "export LANG=C.UTF-8" >> ~/.zshrc
 
 # Create tmux conf
-tmux show -g | cat > ~/.tmux.conf
+tmux
+tmux show -g | sed 's/^/set -g /' > ~/.tmux.conf
