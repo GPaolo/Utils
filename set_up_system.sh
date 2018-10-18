@@ -35,3 +35,6 @@ echo "export PIPENV_VENV_IN_PROJECT=1" >> ~/.zshrc
 echo "export SHELL=/usr/bin/zsh" >> ~/.zshrc
 echo "export LC_ALL=C.UTF-8" >> ~/.zshrc
 echo "export LANG=C.UTF-8" >> ~/.zshrc
+
+# Create tmux conf
+tmux show -g | cat > ~/.tmux.conf
