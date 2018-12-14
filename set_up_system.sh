@@ -4,18 +4,7 @@
 
 echo installing the must-have pre-requisites
 apt-get update
-while read -r p ; do apt-get install -y $p ; done < <(cat << "EOF"
-    git
-    wget
-    zsh
-    nano
-    python3
-    python3-pip
-    python3-dev
-    tmux
-    htop
-EOF
-)
+apt-get install -y git wget zsh nano python3 python3-pip python3-dev tmux htop
 # Make zsh default
 chsh -s $(which zsh)
 
