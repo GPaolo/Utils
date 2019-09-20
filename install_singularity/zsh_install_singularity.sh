@@ -18,7 +18,7 @@ sudo -u $USER source ${FILE}
 # Download Singularity
 SING_VERSION=3.4.0
 sudo -u $USER wget https://github.com/sylabs/singularity/releases/download/v${SING_VERSION}/singularity-${SING_VERSION}.tar.gz
-sudo -u $USER tar -xzf singularity-${VERSION}.tar.gz
+sudo -u $USER tar -xzf singularity-${SING_VERSION}.tar.gz
 sudo -u $USER singularity
 # Compile Singularity
 sudo -u $USER ./mconfig
